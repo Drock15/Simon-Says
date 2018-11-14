@@ -2,17 +2,13 @@ const greenButton_div = document.getElementById('g');
 const redButton_div = document.getElementById('r');
 const yellowButton_div = document.getElementById('y');
 const blueButton_div = document.getElementById('b');
+const startButton_div = document.getElementById('start');
 const userArray = [];
 const computerArray = [];
 const computerChoice = [];
 let correctChoices = 0;
 let gameLevel = 4;
 
-
-function startGame() {
-  computerPlay();
-  
-}
 
 function computerPlay() {
   while (computerChoice.length < gameLevel) {
@@ -31,8 +27,13 @@ function computerPlay() {
         computerChoice.push('b');
     }
   }
+  return computerChoice;
 }
 
 function game() {
+  computerPlay();
   
+}
+function startGame() {
+  startButton_div.addEventListener('click', () => game());
 }
