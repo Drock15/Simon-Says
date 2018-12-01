@@ -31,14 +31,14 @@ header > h1 {
   padding: 10px;
   position: fixed;
   left: 150px;
+  background-color: aqua;
 }
 
 .start_button > p {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-  color: aliceblue;
-  
+  color: rgba(133, 15, 133, 0.671);
 }
 
 .choice:hover {
