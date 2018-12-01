@@ -63,6 +63,12 @@ header > h1 {
 
 }
 
+.result > p {
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
 #g {
   background: green;
 }

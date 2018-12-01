@@ -3,6 +3,7 @@ const redButton_div = document.getElementById('r');
 const yellowButton_div = document.getElementById('y');
 const blueButton_div = document.getElementById('b');
 const startButton_div = document.getElementById('start');
+const result_p = document.querySelector(".result > p");
 const userArray = [];
 const computerArray = [];
 const computerChoice = [];
@@ -36,7 +37,11 @@ function userPlay(userChoice) {
 }
 
 function win() {
-  
+  result_p.innerHTML = `Winner`;
+}
+
+function lose() {
+  result_p.innerHTML = `Loser`;
 }
 
 function game(start) {
@@ -44,9 +49,9 @@ function game(start) {
     computerPlay();
   }
   if (userArray === computerArray) {
-    console.log("Winner");
+    win();
   } else {
-    console.log("Loser");
+    lose();
   }
 }
 
