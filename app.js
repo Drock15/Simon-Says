@@ -4,10 +4,10 @@ const yellowButton_div = document.getElementById('y');
 const blueButton_div = document.getElementById('b');
 const startButton_div = document.getElementById('start');
 const result_p = document.querySelector(".result > p");
-const userArray = [];
 const computerArray = [];
 const computerChoice = [];
-let correctChoices = null;
+const userArray = [];
+let correctChoices = 0;
 let gameLevel = 4;
 let startTheGame = false;
 
@@ -32,34 +32,44 @@ function computerPlay() {
   return computerArray;
 }
 
-function userPlay(userChoice) {
-  userArray.push(userChoice);
+function userChoice(choice) {
+  userArray.push(choice);
+}
+
+function endGame() {
+  computerChoice.splice(0, computerChoice.length);
+  correctChoices = 0;
+  alert('Click start to try again.');
 }
 
 function win() {
   result_p.innerHTML = `Winner`;
 }
 
-function lose() {
-  result_p.innerHTML = `Loser`;
+function playGame() {
+  while (userArray.length !== gameLevel) {
+    if (userArray.length === gameLevel) {
+      if (userArray === computerArray) {
+        win();
+      } else {
+        endGame();
+      }
+    }
+  }
 }
 
 function game(start) {
   if (start === "t") {
     computerPlay();
-  }
-  if (userArray === computerArray) {
-    win();
-  } else {
-    lose();
+    playGame();
   }
 }
 
 function main() {
-  greenButton_div.addEventListener('click', () => main('g'));
-  redButton_div.addEventListener('click', () => main('r'));
-  yellowButton_div.addEventListener('click', () => main('y'));
-  blueButton_div.addEventListener('click', () => main('b'));
+  greenButton_div.addEventListener('click', () => userChoice('g'));
+  redButton_div.addEventListener('click', () => userChoice('r'));
+  yellowButton_div.addEventListener('click', () => userChoice('y'));
+  blueButton_div.addEventListener('click', () => userChoice('b'));
 }
 
 function startGame() {
@@ -67,3 +77,4 @@ function startGame() {
 }
 
 startGame();
+main();
