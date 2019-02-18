@@ -4,33 +4,29 @@ const Game = (_ => {
 
     const listeners = _ => {
         $main.addEventListener('click', event => {
-            if (event.target.matches('.container__content-1')) {
-                console.log('hello');
-                checkColor(event.target.innerText);
-            }
-            if(event.target.matches('.container__content-2')) {
+            if (event.target.matches('p')) {
                 checkColor(event.target.innerHTML);
             }
         })
     }
 
     const checkColor = color => {
-        if (color === G){
-            console.log("You clicked green dog")
+        if (color === 'G'){
+            console.log("You clicked green dog");
         }
-        if (color === R){
-            
+        if (color === 'R'){
+            console.log("You clicked red dog");
         }
-        if (color === Y){
-
+        if (color === 'Y'){
+            console.log("You clicked yellow dog");
         }
-        if (color === B){
-
+        if (color === 'B'){
+            console.log("You clicked blue dog");
         }
     }
 
     const init = _ => {
-        listeners
+        listeners();
     }
 
     return {
