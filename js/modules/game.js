@@ -1,6 +1,10 @@
 const Game = (_ => {
 
     const $main = document.querySelector('.main');
+    const $greenButton =document.querySelector('.green');
+    const $redButton =document.querySelector('.red');
+    const $yellowButton =document.querySelector('.yellow');
+    const $blueButton =document.querySelector('.blue');
 
     const listeners = _ => {
         $main.addEventListener('click', event => {
@@ -12,16 +16,35 @@ const Game = (_ => {
 
     const checkColor = color => {
         if (color === 'G'){
-            console.log("You clicked green dog");
+            buttonGlow(color);
         }
         if (color === 'R'){
-            console.log("You clicked red dog");
+            buttonGlow(color);
         }
         if (color === 'Y'){
-            console.log("You clicked yellow dog");
+            buttonGlow(color);
         }
         if (color === 'B'){
-            console.log("You clicked blue dog");
+            buttonGlow(color);
+        }
+    }
+
+    const buttonGlow = color => {
+        if (color === 'G') {
+            $greenButton.classList.add('green-glow');
+            setTimeout(() => $greenButton.classList.remove('green-glow'), 300);
+        }
+        if (color === 'R') {
+            $redButton.classList.add('red-glow');
+            setTimeout(() => $redButton.classList.remove('red-glow'), 300);
+        }
+        if (color === 'Y') {
+            $yellowButton.classList.add('yellow-glow');
+            setTimeout(() => $yellowButton.classList.remove('yellow-glow'), 300);
+        }
+        if (color === 'B') {
+            $blueButton.classList.add('blue-glow');
+            setTimeout(() => $blueButton.classList.remove('blue-glow'), 300);
         }
     }
 

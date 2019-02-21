@@ -19,14 +19,17 @@ header > h1 {
   text-align: center;
   padding: 10px;
   margin: 10px;
+  margin-bottom: 5rem;
 }
 .container__content-1 > div {
   border: 2px solid black;
   border-radius: 10px;
+  padding: 1rem;
 }
 .container__content-2 > div {
   border: 2px solid black;
   border-radius: 10px;
+  padding: 1rem;
 }
 .container__content-1 {
   display: flex;
@@ -34,7 +37,7 @@ header > h1 {
   width: 50%;
   margin: 10px auto;
   font-size: 2.2rem;
-  
+  padding: .5rem;
 }
 .container__content-2 {
   display: flex;
@@ -42,6 +45,7 @@ header > h1 {
   width: 50%;
   margin: 10px auto;
   font-size: 2.2rem;
+  padding: .5rem;
 }
 .container__content-1:hover {
   cursor: pointer;
@@ -49,20 +53,24 @@ header > h1 {
 .container__content-2:hover {
   cursor: pointer;
 }
-.green {
+.content-1 {
   flex: 1;
+  margin-right: .5rem;
+}
+.content-2 {
+  flex: 1;
+  margin-right: .5rem;
+}
+.green {
   background: rgba(1, 133, 1, 0.700);
 }
 .red {
-  flex: 1;
   background: rgba(255, 0, 0, 0.700);
 }
 .yellow {
-  flex: 1;
   background: rgba(255, 255, 0, 0.700);
 }
 .blue {
-  flex: 1;
   background: rgba(0, 0, 255, 0.700);
 }
 .start_button {
@@ -84,18 +92,18 @@ header > h1 {
   cursor: pointer;
 }
 .green-glow {
-  border: 4px solid #4dcc7d;
-  box-shadow: 0 0 10px #31b43a;
+  border: 6px solid #4dcc7d;
+  box-shadow: 0 0 30px #31b43a;
 }
 .red-glow {
-  border: 4px solid #fc121b;
-  box-shadow: 0 0 10px #d01115;
+  border: 6px solid #fc121b;
+  box-shadow: 0 0 30px #d01115;
 }
 .yellow-glow {
-  border: 4px solid #E3E618;
-  box-shadow: 0 0 10px #D5D745;
+  border: 6px solid #E3E618;
+  box-shadow: 0 0 30px rgb(192, 196, 6);
 }
 .blue-glow {
-  border: 4px solid #142CDF;
-  box-shadow: 0 0 10px #1F2B89;
+  border: 6px solid #142CDF;
+  box-shadow: 0 0 30px #1F2B89;
 }
