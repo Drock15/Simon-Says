@@ -21,6 +21,17 @@ header > h1 {
   margin: 10px;
   margin-bottom: 5rem;
 }
+
+.container-main {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 75%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: url("../images/wood-bg.jpg") no-repeat center;
+  background-size: 100%;
+}
+
 .container__content-1 > div {
   border: 2px solid black;
   border-radius: 10px;
@@ -37,7 +48,7 @@ header > h1 {
   width: 50%;
   margin: 10px auto;
   font-size: 2.2rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 .container__content-2 {
   display: flex;
@@ -45,7 +56,7 @@ header > h1 {
   width: 50%;
   margin: 10px auto;
   font-size: 2.2rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 .container__content-1:hover {
   cursor: pointer;
@@ -55,30 +66,30 @@ header > h1 {
 }
 .content-1 {
   flex: 1;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 .content-2 {
   flex: 1;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 .green {
-  background: rgba(1, 133, 1, 0.700);
+  background: rgba(1, 133, 1, 0.7);
 }
 .red {
-  background: rgba(255, 0, 0, 0.700);
+  background: rgba(255, 0, 0, 0.7);
 }
 .yellow {
-  background: rgba(255, 255, 0, 0.700);
+  background: rgba(255, 255, 0, 0.7);
 }
 .blue {
-  background: rgba(0, 0, 255, 0.700);
+  background: rgba(0, 0, 255, 0.7);
 }
 .start_button {
   margin: 1.2rem auto;
   width: 200px;
   border: 2px solid white;
   border-radius: 10px;
-  padding: .5rem;
+  padding: 0.5rem;
   left: 150px;
   background-color: rgba(0, 255, 255, 0.705);
 }
@@ -100,10 +111,10 @@ header > h1 {
   box-shadow: 0 0 30px #d01115;
 }
 .yellow-glow {
-  border: 6px solid #E3E618;
+  border: 6px solid #e3e618;
   box-shadow: 0 0 30px rgb(192, 196, 6);
 }
 .blue-glow {
-  border: 6px solid #142CDF;
-  box-shadow: 0 0 30px #1F2B89;
+  border: 6px solid #142cdf;
+  box-shadow: 0 0 30px #1f2b89;
 }

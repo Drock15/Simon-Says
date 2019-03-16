@@ -1,3 +1,3 @@
-import Game from './modules/game.js';
+import Main from './modules/main.js';
 
-Game.init();
+Main.init();
