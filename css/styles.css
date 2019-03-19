@@ -6,6 +6,7 @@
 body {
   background-image: url(../images/gaming-pattern.png);
 }
+
 header {
   background: white;
 }
@@ -25,11 +26,13 @@ header > h1 {
 .container-main {
   border: 2px solid black;
   border-radius: 50%;
+  display: flex;
+  flex-direction: column;
   width: 75%;
   margin: 0 auto;
   padding: 1.5rem;
   background: url("../images/wood-bg.jpg") no-repeat center;
-  background-size: 100%;
+  box-shadow: 9px 11px 26px 4px rgba(0, 0, 0, 0.73);
 }
 
 .container__content-1 > div {
@@ -44,17 +47,19 @@ header > h1 {
 }
 .container__content-1 {
   display: flex;
+  flex: 1;
   text-align: center;
   width: 50%;
-  margin: 10px auto;
+  margin: auto;
   font-size: 2.2rem;
   padding: 0.5rem;
 }
 .container__content-2 {
   display: flex;
+  flex: 1;
   text-align: center;
   width: 50%;
-  margin: 10px auto;
+  margin: auto;
   font-size: 2.2rem;
   padding: 0.5rem;
 }
@@ -84,37 +89,51 @@ header > h1 {
 .blue {
   background: rgba(0, 0, 255, 0.7);
 }
-.start_button {
-  margin: 1.2rem auto;
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+#start_button {
   width: 200px;
   border: 2px solid white;
   border-radius: 10px;
   padding: 0.5rem;
-  left: 150px;
-  background-color: rgba(0, 255, 255, 0.705);
-}
-.start_button > p {
-  text-align: center;
   font-weight: bold;
   font-size: 20px;
   color: rgba(133, 15, 133, 0.671);
+  background-color: rgba(0, 255, 255, 0.705);
+  box-shadow: 9px 11px 26px 4px rgba(0, 0, 0, 0.73);
+  text-decoration: none;
+  outline: none;
 }
-.start_button:hover {
+
+#start_button:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 .green-glow {
+  background: #31b43a;
   border: 6px solid #4dcc7d;
   box-shadow: 0 0 30px #31b43a;
+  color: #fff;
 }
 .red-glow {
+  background: #ff1216;
   border: 6px solid #fc121b;
-  box-shadow: 0 0 30px #d01115;
+  box-shadow: 0 0 30px #ff1216;
+  color: #fff;
 }
 .yellow-glow {
+  background: rgb(248, 252, 10);
   border: 6px solid #e3e618;
-  box-shadow: 0 0 30px rgb(192, 196, 6);
+  box-shadow: 0 0 30px rgb(248, 252, 10);
+  color: #fff;
 }
 .blue-glow {
+  background: #293cc7;
   border: 6px solid #142cdf;
-  box-shadow: 0 0 30px #1f2b89;
+  box-shadow: 0 0 30px #293cc7;
+  color: #fff;
 }

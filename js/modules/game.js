@@ -1,18 +1,25 @@
+import Main from "./main.js";
+
 const Game = (_ => {
+  let level = 4;
 
-    const $main = document.querySelector('.main');
+  const $main = document.querySelector(".main");
 
-    const computerPlay = _ => {
-        
+  const computerPlay = _ => {
+    let randomSelection = Math.floor(Math.random() * 4);
+    const collection = [];
+    for (let i = 0; i < level; i++) {
+      collection.push(randomSelection);
     }
+  };
 
-    const init = _ => {
+  const init = _ => {
+    computerPlay();
+  };
 
-    }
-
-    return {
-        init
-    }
+  return {
+    init
+  };
 })();
 
 export default Game;
