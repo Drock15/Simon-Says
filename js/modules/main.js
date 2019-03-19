@@ -13,7 +13,7 @@ const Main = (_ => {
         checkColor(event.target.innerHTML);
       }
 
-      if (event.target.matches(".start_button")) {
+      if (event.target.matches("#start_button")) {
         Game.init();
       }
     });
