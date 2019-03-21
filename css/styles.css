@@ -137,3 +137,24 @@ header > h1 {
   box-shadow: 0 0 30px #293cc7;
   color: #fff;
 }
+
+@media (max-width: 500px) {
+  .container-main {
+    width: 100%;
+  }
+  .container__content-1,
+  .container__content-2 {
+    display: inline;
+  }
+
+  .content-1,
+  .content-2 {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 780px) {
+  .container-main {
+    width: 50%;
+  }
+}
